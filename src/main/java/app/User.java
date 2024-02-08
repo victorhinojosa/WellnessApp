@@ -1,5 +1,5 @@
 package app;
-import java.util.Scanner
+
 
 public class User {
     //Exercise
@@ -28,12 +28,8 @@ public class User {
     public float getExerciseMinutes() {
         return exerciseMinutes;
     }
-    public void setExerciseMinutes() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How many minutes of exercise did you do today?");
-        float minutes = scanner.nextFloat();
-        this.exerciseMinutes = minutes;
-        scanner.close();
+    public void setExerciseMinutes(float exerciseMinutes) {
+        this.exerciseMinutes = exerciseMinutes;
     }
 
     public int getExerciseMotivationLevel() {

@@ -1,5 +1,4 @@
 package app;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +36,7 @@ public class UserInteraction implements UserInterface {
 
     @Override
     public void printSummary() {
-        // Imprimir resumen en la consola
+        // Overview on the console
         System.out.println("\nSummary of data entered:");
         System.out.println("Minutes of exercise: " + user.getExerciseMinutes());
         System.out.println("Motivation level during exercise: " + user.getExerciseMotivationLevel());
@@ -52,7 +51,7 @@ public class UserInteraction implements UserInterface {
 
     @Override
     public List<String> getSummary() {
-        // Obtener resumen como lista de strings
+        // Overview in list
         List<String> summary = new ArrayList<>();
         summary.add("Minutes of exercise: " + user.getExerciseMinutes());
         summary.add("Motivation level during exercise: " + user.getExerciseMotivationLevel());
